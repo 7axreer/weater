@@ -1,0 +1,18 @@
+$Monsterrat: ('Regular', 400),
+            ('Medium', 500),
+            ('Bold', 700);
+            
+@each $name,$weight in $Monsterrat {
+    @font-face {
+        font-family: 'Monsterrat';
+        src: url(../font/Montserrat-#{$name}.ttf);
+        font-weight: $weight;
+    }
+}
+
+
+
+
+
+
+

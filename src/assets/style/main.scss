@@ -1,0 +1,73 @@
+@import "font.scss";
+
+$bg: #ffffff;
+$text: black;
+
+body {
+    background: $bg;
+    transition: all 500ms;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monsterrat';
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+    & .logo {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        
+        span {
+            color: #4793FF;
+            text-transform: uppercase;
+            line-height: 30px;
+            font-weight: 700;
+            
+        }
+    }
+    
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        
+        & input {
+            border: none;
+            outline: none;
+            background: #4793FF33;
+            border-radius: 10px;
+            width: 194px;
+            height: 37px;
+            text-align: center;
+            line-height: 20px;
+            font-weight: 500;
+            padding: 0 20px;
+        }
+        & img {
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
